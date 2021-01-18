@@ -50,6 +50,11 @@ This image shows an example of an user entering their information in the loan qu
 
 ![usage_example.png](usage_example.png)
 
+
+The following csv file is created from this example:
+
+![created_csv_example.png](created_csv_example.png)
+
 ---
 
 ## Contributors
