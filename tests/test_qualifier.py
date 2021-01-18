@@ -16,6 +16,8 @@ from qualifier.filters import max_loan_size
 def test_save_csv():
     # @TODO: Your code here!
     # Use Path from pathlib to output the test csv to ./data/output/qualifying_loans.csv
+    #assert True
+    #assert False
 
 def test_calculate_monthly_debt_ratio():
     assert calculators.calculate_monthly_debt_ratio(1500, 4000) == 0.375

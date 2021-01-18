@@ -1,39 +1,83 @@
-# Project Title
+# Module 2 Challenge: Loan Qualifier Application!
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This project is designed to help a user determine the number of loans a user qualifies for based on their financial information. The program asks the user to enter a file path to a rate-sheet. This file includes a list of banks with their loan qualifications. The program then asks them a series of financial questions. 
+
+Once the user inputs financial infomation, the program runs calculations and cross references the results with the bank list. The program then returns the users monthly debt to income ratio, loan to value ratio, and the number of loans they qualify for.
+
+If the user qualifies for loans, the program will ask if the user would like to save their qualifying loans to a .csv file. If they select yes, they then can then enter their .csv file name and it will save a file in .csv format in the folder.
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+[fire](fire) - for the command line interface
+
+[questionary](questionary) - gives ability to interact with the user and recieve user input in program
+
+[sys](sys) - system-specific parameters and functions
+
+[csv](csv) - for reading and writing .csv files
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Install the following in your conda dev environment
+
+```python
+pip install fire
+pip install questionary
+pip install pytest
+```
 
 ---
 
 ## Examples
 
-This section should include screenshots, code blocks, or animations showing how your project works.
-
+make sure you activate your conda dev environment (python 3.7) before running the code:
+```
+conda activate dev
+```
+When prompted for .csv file, enter the following for this program:
+```
+data/daily_rate_sheet.csv
+```
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+This image shows an example of an user entering their information in the loan qualifier application:
+
+![usage_example.png](usage_example.png)
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
+UCB Fintech Bootcamp, Wynham Guillemot 
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
+MIT License
+
+Copyright (c) [2021] [UCB Fintech Bootcamp, Wyham Guillemot]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
